@@ -1,0 +1,8 @@
+apiVersion: rbac.authorization.k8s.io/v1alpha1
+kind: ClusterRole
+metadata:
+  name: bobtest-kubeapplier
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "watch", "list"]
